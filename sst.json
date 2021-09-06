@@ -1,0 +1,6 @@
+{
+  "name": "notes",
+  "stage": "dev",
+  "region": "eu-west-2",
+  "lint": true
+}
