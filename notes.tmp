@@ -1,0 +1,11 @@
+curl -X POST -H 'Content-Type: application/json' -d '{"content":"Hello World","attachment":"hello.jpg"}' https://j1pd26pfrf.execute-api.eu-west-2.amazonaws.com/notes
+
+{"userId":"123","noteId":"3f869900-0f62-11ec-b8a8-8ffbdb2199ed","content":"Hello World","createdAt":1630967518864}
+
+curl https://j1pd26pfrf.execute-api.eu-west-2.amazonaws.com/notes/3f869900-0f62-11ec-b8a8-8ffbdb2199ed
+
+curl https://j1pd26pfrf.execute-api.eu-west-2.amazonaws.com/notes
+
+curl -X PUT -H 'Content-Type: application/json' -d '{"content":"New World","attachment":"new.jpg"}' https://j1pd26pfrf.execute-api.eu-west-2.amazonaws.com/notes/3f869900-0f62-11ec-b8a8-8ffbdb2199ed
+
+curl -X DELETE https://j1pd26pfrf.execute-api.eu-west-2.amazonaws.com/notes/3f869900-0f62-11ec-b8a8-8ffbdb2199ed
